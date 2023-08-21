@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Main <-- Game
+Game <- TextUI
+Game <-- Grader
+Grader <- TextUI
+
+
+class Main {
+    - Game
+
+}
+
+class Grader {
+    - TextUI
+    - String[] randomColours
+    - String validate(String[])
+}
+
+class TextUI {
+    + void displayMsg(String)
+    + String getInput(String)
+}
+
+class Game {
+    - TextUI
+    - Boolean gameOn
+    - Enum Colours
+    - Grader
+    - String[] randomize()
+
+}
+
+@enduml
