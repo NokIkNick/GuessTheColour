@@ -20,7 +20,7 @@ public class Grader {
         }
 
         if(rightColour > 0 || rightSpot > 0){
-            return ("You guessed: "+rightSpot+" right colours and spot! \n"+"You guessed: "+ rightColour+ " right colours");
+            return ("You guessed: "+rightSpot+" right colour(s) and spot(s)! \n"+"You guessed: "+ rightColour+ " right colour(s) in incorrect spot(s)");
         }else {
             return ("You guessed nothing right!");
         }
