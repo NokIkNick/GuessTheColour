@@ -3,16 +3,21 @@ import java.util.Random;
 
 public class Game {
     TextUI textUI;
-    Boolean gameOn;
+    Boolean gameOn = true;
 
     String[] colors;
     Grader grader;
 
     public void gameStart(int input) {
+        Grader grader = new Grader();
         System.out.println("You chose " + input);
         colors = randomize(input);
         for (String element: colors) {  // this loop is just to see what which colors got generated. will be removed in final version
             System.out.println(element);
+        }
+        while(gameOn){
+            //grader.validate();
+            gameOn = false;
         }
     }
 

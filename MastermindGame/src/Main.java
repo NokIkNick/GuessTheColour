@@ -13,7 +13,7 @@ public class Main {
         // i tilfælde af vi beholder ideen om at vi kan ændre på længden, skal vi have et tjek på at det faktisk er et tal der bliver sat ind.
         // og det sikre os det holder sig inden for et bestemt interval.
         int length = scan.nextInt();
-        scan.next();
+        //scan.next();
 
         game.gameStart(length);
 
