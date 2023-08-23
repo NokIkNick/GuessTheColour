@@ -3,17 +3,33 @@ import java.util.Random;
 
 public class Game {
     TextUI textUI;
-    Boolean gameOn;
+    Boolean gameOn = true;
 
     String[] colors;
+    String[] guessedColors;
     Grader grader;
 
-    public void gameStart(int input) {
-        System.out.println("You chose " + input);
-        colors = randomize(input);
-        for (String element: colors) {  // this loop is just to see what which colors got generated. will be removed in final version
+    public void gameStart() {
+        grader = new Grader();
+        textUI = new TextUI();
+        textUI.displayMsg("Hej, velkommen til Mastermind!");
+        int length = textUI.getIntInput("how long do you want the color sequence to be?");
+        colors = randomize(length);
+        for (String element : colors) {
             System.out.println(element);
         }
+        while(gameOn){
+            guessedColors = new String[length];
+            for (int i = 0; i < length; i++) {
+                String tmpGuess = textUI.getStringInput("enter a color you want to guess on");
+                guessedColors[i] = tmpGuess;
+            }
+            System.out.println(grader.validate(colors, guessedColors));
+            if(grader.getRightSpot() == colors.length) {
+                gameOn = false;
+            }
+        }
+        textUI.displayMsg("gz, you won!");
     }
 
     String[] randomize(int input) {
