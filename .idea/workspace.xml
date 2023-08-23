@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dbd0fc4-9dc8-4458-9458-1787a49cc880" name="Changes" comment="" />
+    <list default="true" id="b65adf0f-3a68-4d96-a744-f41096925fd9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +13,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
-  <component name="ProjectId" id="2UI1QxgDttTTt5WsdlVDmvPII76" />
+  <component name="ProjectId" id="2UL7FKnvdlpYY3PKVbNAdDmWRjx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,22 +21,36 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/nickl/Desktop/GitHub/MasterMind",
+    "last_opened_file_path": "C:/Users/Nicklas/Desktop/GitHub/MasterMind/MastermindGame",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6dbd0fc4-9dc8-4458-9458-1787a49cc880" name="Changes" comment="" />
-      <created>1692612268144</created>
+      <changelist id="b65adf0f-3a68-4d96-a744-f41096925fd9" name="Changes" comment="" />
+      <created>1692706904525</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1692612268144</updated>
-      <workItem from="1692612269176" duration="83000" />
+      <updated>1692706904525</updated>
+      <workItem from="1692706906378" duration="30000" />
     </task>
     <servers />
   </component>
