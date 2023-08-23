@@ -11,7 +11,7 @@ public class Game {
     public void gameStart(int input) {
         System.out.println("You chose " + input);
         colors = randomize(input);
-        for (String element: colors) {
+        for (String element: colors) {  // this loop is just to see what which colors got generated. will be removed in final version
             System.out.println(element);
         }
     }
