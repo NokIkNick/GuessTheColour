@@ -3,9 +3,12 @@ import java.util.List;
 
 public class Grader {
 
+    private int rightSpot;
+    private int rightColour;
+
     public String validate(String[] rightColours, String[] guessColours){
-        int rightSpot = 0;
-        int rightColour = 0;
+        rightSpot = 0;
+        rightColour = 0;
         for(int i = 0; i < rightColours.length; i++){
             if(rightColours[i].equalsIgnoreCase(guessColours[i])){
                 rightSpot++;
@@ -25,6 +28,14 @@ public class Grader {
             return ("You guessed nothing right!");
         }
 
+    }
+
+    public int getRightSpot(){
+        return rightSpot;
+    }
+
+    public int getRightColour(){
+        return rightColour;
     }
 
 }
