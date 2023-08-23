@@ -36,8 +36,9 @@ public class TextUI {
                 if(!out.isBlank() || !out.isEmpty()){
                     if(out.equals("RED") || out.equals("BLUE") || out.equals("YELLOW") || out.equals("GREEN") || out.equals("BLACK")){
                         validInput = true;
+                    }else {
+                        displayMsg("Invalid input! Enter a color you want to guess on again");
                     }
-                    displayMsg("Invalid input! Try again!");
                 }
             }catch(Exception e){
                 displayMsg("Invalid input! Try again!");
