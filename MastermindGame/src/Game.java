@@ -12,12 +12,13 @@ public class Game {
     public void gameStart() {
         grader = new Grader();
         textUI = new TextUI();
-        textUI.displayMsg("Hej, velkommen til Mastermind!");
+        textUI.displayMsg("Hello, welcome to Mastermind!");
         int length = textUI.getIntInput("how long do you want the color sequence to be?");
         colors = randomize(length);
+        /*
         for (String element : colors) {
             System.out.println(element);
-        }
+        }*/
         while(gameOn){
             guessedColors = new String[length];
             for (int i = 0; i < length; i++) {
